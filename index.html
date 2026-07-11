@@ -64,6 +64,16 @@ main{max-width:1050px}.rules,.list{grid-template-columns:1fr 1fr}.news-body{padd
 .letter-card h3{font-family:serif;color:var(--navy);font-size:19px;margin:0 0 10px}
 .letter-card p{font-size:14px;line-height:1.9;color:#485466;margin:0}
 
+.letter-link{
+  display:inline-block;
+  margin-top:12px;
+  color:var(--navy);
+  font-size:14px;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
 </style>
 </head>
 <body>
@@ -169,6 +179,18 @@ async function loadLetters(){
         </div>
         <h3>${esc(item.title)}</h3>
         <p>${esc(item.text).replaceAll('\\n','<br>')}</p>
+
+        ${item.link && item.linkText ? `
+          <a
+            class="letter-link"
+            href="${esc(item.link)}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ${esc(item.linkText)}
+          </a>
+        ` : ''}
+
       </article>
     `).join('');
 
