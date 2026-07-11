@@ -4,8 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>虹ケ丘学園｜公式Webサイト</title>
-<link rel="icon" type="image/png" href="assets/nijigaoka-emblem-transparent.png">
-
 <style>
 :root{--navy:#102b57;--navy2:#071a39;--line:#d9e0ea;--bg:#f7f8fb;--text:#172033;--muted:#687386}
 *{box-sizing:border-box}
@@ -14,234 +12,68 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,B
 a{color:inherit}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
 .header-inner{max-width:720px;margin:auto;padding:12px 16px 8px}
-
-.brand{
-  font-family:serif;
-  font-size:21px;
-  font-weight:800;
-  letter-spacing:.08em;
-  color:var(--navy);
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.school-emblem{
-  width:46px;
-  height:46px;
-  object-fit:contain;
-  flex-shrink:0;
-}
-
+.brand{font-family:serif;font-size:21px;font-weight:800;letter-spacing:.08em;color:var(--navy);display:flex;align-items:center;gap:10px}
+.brand-logo{width:42px;height:42px;object-fit:contain;flex-shrink:0}
 .brand small{display:block;font-size:9px;letter-spacing:.18em;margin-top:2px}
-
 nav{display:flex;gap:4px;overflow-x:auto;margin-top:9px;padding-bottom:3px;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav a{text-decoration:none;padding:8px 10px;border-radius:7px;font-size:12px;font-weight:700;color:var(--navy);white-space:nowrap}
-
-.hero{
-  height:56vh;
-  min-height:390px;
-  max-height:620px;
-  background:
-  linear-gradient(180deg,rgba(7,26,57,.08),rgba(7,26,57,.48)),
-  url("assets/school-spring.jpg") center/cover no-repeat;
-  display:flex;
-  align-items:flex-end
-}
-
+.hero{height:56vh;min-height:390px;max-height:620px;background:linear-gradient(180deg,rgba(7,26,57,.08),rgba(7,26,57,.48)),url("assets/school-spring.jpg") center/cover no-repeat;display:flex;align-items:flex-end}
 .hero-inner{width:100%;max-width:720px;margin:auto;padding:44px 22px;color:#fff;text-shadow:0 2px 12px #0008}
 .hero h1{font-family:serif;font-size:clamp(34px,10vw,52px);font-weight:500;line-height:1.4;letter-spacing:.06em;margin:0 0 12px}
 .hero p{font-family:serif;font-size:16px;letter-spacing:.08em;margin:0}
-
 main{max-width:720px;margin:auto;padding:34px 14px 64px}
 .section{scroll-margin-top:110px;margin-bottom:44px}
 .section-title{font-family:serif;font-size:25px;color:var(--navy);border-bottom:3px solid var(--navy);padding-bottom:10px;margin:0 0 18px}
-
 .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px;box-shadow:0 4px 18px #102b570a}
 .guide{white-space:pre-line;line-height:2;font-family:serif;font-size:15px}
 .demand{line-height:2;font-size:14px}
-
-.label{
-  display:inline-block;
-  background:var(--navy);
-  color:#fff;
-  padding:5px 10px;
-  border-radius:4px;
-  font-weight:700;
-  margin-bottom:12px;
-  font-size:13px
-}
-
+.label{display:inline-block;background:var(--navy);color:#fff;padding:5px 10px;border-radius:4px;font-weight:700;margin-bottom:12px;font-size:13px}
 .admission{text-align:center;margin-top:24px}
 .admission a{display:block;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:15px 24px;border-radius:7px}
-
 .rules{display:grid;gap:12px}
 .rule{padding:18px;border-radius:8px;line-height:1.9;font-size:14px}
-.allow{background:#edf5ff}
-.deny{background:#fff0f1}
-.rule h3{display:block;margin:0 0 4px;color:var(--navy);font-size:1em}
-.rule h3+span{margin-left:0}
-
+.allow{background:#edf5ff}.deny{background:#fff0f1}
+.rule h3{display:block;margin:0 0 4px;color:var(--navy);font-size:1em}.rule h3+span{margin-left:0}
 .note{margin-top:12px;background:#f5f3ef;padding:18px;border-radius:8px;line-height:1.9;font-size:14px}
-
 .list{display:grid;gap:10px}
-
-.item{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:16px;
-  display:grid;
-  grid-template-columns:42px 1fr;
-  gap:12px;
-  align-items:start
-}
-
-.icon{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  background:#edf3fa;
-  display:grid;
-  place-items:center;
-  font-size:22px
-}
-
+.item{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start}
+.icon{width:42px;height:42px;border-radius:50%;background:#edf3fa;display:grid;place-items:center;font-size:22px}
 .item b{display:block;color:var(--navy);font-size:17px;margin-bottom:5px}
 .item span{color:var(--muted);line-height:1.7;font-size:14px}
-
 .news{padding:0;overflow:hidden}
 .news-visual{width:100%;aspect-ratio:16/9;background:url("assets/tanabata.jpg") center/cover no-repeat}
 .news-body{padding:20px}
 .news-body h3{font-family:serif;font-size:25px;color:var(--navy);margin:4px 0 12px}
 .news-body p{line-height:1.9;font-size:14px}
-
-.news-link{
-  display:block;
-  text-align:center;
-  margin-top:14px;
-  color:#fff;
-  background:var(--navy);
-  text-decoration:none;
-  padding:13px 18px;
-  border-radius:6px;
-  font-weight:700
-}
-
-.letter-list{display:grid;gap:12px}
-
-.letter-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:18px;
-  box-shadow:0 3px 12px #102b5708
-}
-
-.letter-meta{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:10px;
-  color:var(--muted);
-  font-size:12px
-}
-
-.letter-meta span{
-  background:#edf3fa;
-  color:var(--navy);
-  padding:4px 8px;
-  border-radius:4px;
-  font-weight:700
-}
-
-.letter-card h3{font-family:serif;color:var(--navy);font-size:19px;margin:0 0 10px}
-.letter-card p{font-size:14px;line-height:1.9;color:#485466;margin:0}
-
+.news-link{display:block;text-align:center;margin-top:14px;color:#fff;background:var(--navy);text-decoration:none;padding:13px 18px;border-radius:6px;font-weight:700}
 footer{background:var(--navy2);color:#fff;padding:28px 20px;text-align:center}
 footer b{font-family:serif;letter-spacing:.12em}
 footer small{display:block;opacity:.7;margin-top:7px}
-
 @media(min-width:760px){
-  .header-inner{
-    max-width:1100px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between
-  }
-
-  .brand{font-size:24px}
-  nav{margin-top:0}
-  .hero-inner{max-width:1100px}
-  .hero{height:600px}
-  .hero h1{font-size:58px}
-  main{max-width:1050px}
-  .rules,.list{grid-template-columns:1fr 1fr}
-  .news-body{padding:28px}
+.header-inner{max-width:1100px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px}nav{margin-top:0}
+.hero-inner{max-width:1100px}.hero{height:600px}.hero h1{font-size:58px}
+main{max-width:1050px}.rules,.list{grid-template-columns:1fr 1fr}.news-body{padding:28px}
 }
+
+.letter-list{display:grid;gap:12px}
+.letter-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:0 3px 12px #102b5708}
+.letter-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--muted);font-size:12px}
+.letter-meta span{background:#edf3fa;color:var(--navy);padding:4px 8px;border-radius:4px;font-weight:700}
+.letter-card h3{font-family:serif;color:var(--navy);font-size:19px;margin:0 0 10px}
+.letter-card p{font-size:14px;line-height:1.9;color:#485466;margin:0}
+
 </style>
 </head>
-
 <body>
+<header><div class="header-inner"><div class="brand"><img class="brand-logo" src="assets/nijigaoka-emblem-transparent.png" alt="虹ケ丘学園 校章"><div>虹ケ丘学園<small>NIJIGAOKA ACADEMY</small></div></div><nav>
+<a href="#guide">学園案内</a><a href="#admission">受験生の方へ</a><a href="#rules">校則</a><a href="#clubs">部活動</a><a href="#committees">委員会</a><a href="#news">注目情報</a><a href="#letters">学園だより</a>
+</nav></div></header>
 
-<header>
-<div class="header-inner">
-
-<div class="brand">
-<img
-class="school-emblem"
-src="assets/nijigaoka-emblem-transparent.png"
-alt="虹ケ丘学園 校章"
->
-
-<div>
-虹ケ丘学園
-<small>NIJIGAOKA ACADEMY</small>
-</div>
-</div>
-
-<nav>
-<a href="#guide">学園案内</a>
-<a href="#admission">受験生の方へ</a>
-<a href="#rules">校則</a>
-<a href="#clubs">部活動</a>
-<a href="#committees">委員会</a>
-<a href="#news">注目情報</a>
-<a href="#letters">学園だより</a>
-</nav>
-
-</div>
-</header>
-
-
-<section class="hero">
-<div class="hero-inner">
-
-<h1>
-さあ、青春の<br>
-チャイムが鳴る。
-</h1>
-
-<p>
-貴方だけの学園生活を始めよう。
-</p>
-
-</div>
-</section>
-
+<section class="hero"><div class="hero-inner"><h1>さあ、青春の<br>チャイムが鳴る。</h1><p>貴方だけの学園生活を始めよう。</p></div></section>
 
 <main>
-
-
-<section id="guide" class="section">
-
-<h2 class="section-title">
-学園案内
-</h2>
-
-<div class="card guide">春。
+<section id="guide" class="section"><h2 class="section-title">学園案内</h2><div class="card guide">春。
 桜が舞い、新しい制服に袖を通す季節。
 
 全国から集まった個性豊かな生徒たちが通う学園。
@@ -250,7 +82,8 @@ alt="虹ケ丘学園 校章"
 部活動に青春を捧げる者。
 放課後に友人と寄り道をする者。
 
-そして、誰にも言えない想いを胸に秘める者──。
+そして、
+誰にも言えない想いを胸に秘める者──。
 
 同じ教室で笑い合い、
 時にはぶつかり合い、
@@ -264,431 +97,91 @@ alt="虹ケ丘学園 校章"
 出会いの数だけ物語があり、
 そのすべてが、この学園の日常になる。
 
-これは、もしも彼らが
-“普通の学生”だったなら──という、もうひとつの世界。
-
 さあ、青春のチャイムが鳴る。
-貴方だけの学園生活を始めよう。</div>
-
-</section>
-
-
-<section id="admission" class="section">
-
-<h2 class="section-title">
-受験生の方へ
-</h2>
-
-<div class="card">
-
-<div class="label">
-需要
-</div>
-
-<div class="demand">
-元2期生：織姫星：まななつ：VΔLZ：葉加瀬冬雪：夜見れな：EN：Vox Akuma：Ranunculus：海妹四葉：Idios：みたらし団：すぷれあ：y4t4
-</div>
-
-<div class="admission">
-
-<a
-href="https://line.me/ti/g2/tpEH3gxj3qFt40OeQc3hXtb2RRpdjeJlhVF5Wg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
-target="_blank"
-rel="noopener noreferrer"
->
-入学はこちらから
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="rules" class="section">
-
-<h2 class="section-title">
-校則
-</h2>
-
-<div class="card">
-
-<div class="rules">
-
-<div class="rule allow">
-
-<h3>
-【　可　】
-</h3>
-
-<span>
-無炉留：捏造設定：年齢操作：微三大厨：ＣＣ：ＣＰ：卒業ライバー：ＥＮ勢：記号：サブトークでのスレッド
-</span>
-
-</div>
-
-
-<div class="rule deny">
-
-<h3>
-【　不可　】
-</h3>
-
-<span>
-掛け持ち：折：同顔：無断割込：過度な三大厨：伽羅崩壊：顔文字：絵文字：契約解除ライバー：退出時の名前の変更：無言ＣＣ
-</span>
-
-</div>
-
-</div>
-
-
-<div class="note">
-
-<b>
-【　記号／絵文字について　】
-</b>
-
-<br>
-
-＾＾ や ♪ など簡易的なものはＯＫ<br>
-絵文字は基本的に禁止
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="clubs" class="section">
-
-<h2 class="section-title">
-部活動
-</h2>
-
-<div class="list">
-
-<div class="item">
-<div class="icon">⚾️</div>
-<div>
-<b>野球部</b>
-<span>日々の練習に励み、試合や大会での勝利を目指す。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🏀</div>
-<div>
-<b>バスケ部</b>
-<span>チームワークを大切に、コートで技術を磨く。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎾</div>
-<div>
-<b>テニス部</b>
-<span>基礎練習から試合形式まで、互いに高め合いながら活動する。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">💃</div>
-<div>
-<b>ダンス部</b>
-<span>さまざまなジャンルのダンスに挑戦し、ステージで成果を披露する。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎸</div>
-<div>
-<b>軽音楽部</b>
-<span>バンド活動を中心に、演奏やライブに向けて練習する。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎺</div>
-<div>
-<b>吹奏楽部</b>
-<span>合奏を重ね、学園行事や演奏会で音楽を届ける。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎭</div>
-<div>
-<b>演劇部</b>
-<span>演技や舞台制作に取り組み、一つの物語を作り上げる。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">👻</div>
-<div>
-<b>オカルト研究部</b>
-<span>旧校舎を部室として学園の不思議を探求する。</span>
-</div>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="committees" class="section">
-
-<h2 class="section-title">
-委員会
-</h2>
-
-<div class="list">
-
-<div class="item">
-<div class="icon">🏫</div>
-<div>
-<b>生徒会</b>
-<span>生徒代表として学園を管理する。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">📋</div>
-<div>
-<b>風紀委員会</b>
-<span>学園の秩序を守り、より良い学園生活を支える。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">📚</div>
-<div>
-<b>図書委員会</b>
-<span>図書館の管理や貸出業務を行い、読書活動を支える。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🩹</div>
-<div>
-<b>保健委員会</b>
-<span>生徒の健康管理や、保健に関する活動を行う。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎙️</div>
-<div>
-<b>放送委員会</b>
-<span>校内放送や学園行事でのアナウンスを担当する。</span>
-</div>
-</div>
-
-<div class="item">
-<div class="icon">🎪</div>
-<div>
-<b>文化祭実行委員会</b>
-<span>さまざまな行事を考案，運営する。</span>
-</div>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="news" class="section">
-
-<h2 class="section-title">
-注目情報
-</h2>
-
-<article class="card news">
-
-<div class="news-visual"></div>
-
-<div class="news-body">
-
-<span class="label">
-イベント
-</span>
-
-<h3>
-天の川に願いを─。
-</h3>
-
-<p>
-年に一度、織姫と彦星が天の川を越えて出会う日。<br>
-そして、短冊に願いを綴る日でもあります。<br>
-そこで今年は七夕イベントを開催いたしました。
-</p>
-
-<a
-class="news-link"
-href="https://nijigaku-tanabata.s-h-k-p-h-990.workers.dev/"
-target="_blank"
-rel="noopener noreferrer"
->
-短冊はこちらから
-</a>
-
-</div>
-
-</article>
-
-</section>
-
+貴方だけの学園生活を始めよう。</div></section>
+
+<section id="admission" class="section"><h2 class="section-title">受験生の方へ</h2><div class="card"><div class="label">需要</div><div class="demand">元2期生：織姫星：まななつ：VΔLZ：葉加瀬冬雪：夜見れな：EN：Vox Akuma：Ranunculus：海妹四葉：Idios：みたらし団：すぷれあ：y4t4</div><div class="admission"><a href="https://line.me/ti/g2/tpEH3gxj3qFt40OeQc3hXtb2RRpdjeJlhVF5Wg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener noreferrer">入学はこちらから</a></div></div></section>
+
+<section id="rules" class="section"><h2 class="section-title">校則</h2><div class="card"><div class="rules">
+<div class="rule allow"><h3>【　可　】</h3><span>無炉留：捏造設定：年齢操作：微三大厨：ＣＣ：ＣＰ：卒業ライバー：ＥＮ勢：記号：サブトークでのスレッド</span></div>
+<div class="rule deny"><h3>【　不可　】</h3><span>掛け持ち：折：同顔：無断割込：過度な三大厨：伽羅崩壊：顔文字：絵文字：契約解除ライバー：退出時の名前の変更：無言ＣＣ</span></div>
+</div><div class="note"><b>【　記号／絵文字について　】</b><br>＾＾ や ♪ など簡易的なものはＯＫ<br>絵文字は基本的に禁止</div></div></section>
+
+<section id="clubs" class="section"><h2 class="section-title">部活動</h2><div class="list">
+<div class="item"><div class="icon">⚾️</div><div><b>野球部</b><span>日々の練習に励み、試合や大会での勝利を目指す。</span></div></div>
+<div class="item"><div class="icon">🏀</div><div><b>バスケ部</b><span>チームワークを大切に、コートで技術を磨く。</span></div></div>
+<div class="item"><div class="icon">🎾</div><div><b>テニス部</b><span>基礎練習から試合形式まで、互いに高め合いながら活動する。</span></div></div>
+<div class="item"><div class="icon">💃</div><div><b>ダンス部</b><span>さまざまなジャンルのダンスに挑戦し、ステージで成果を披露する。</span></div></div>
+<div class="item"><div class="icon">🎸</div><div><b>軽音楽部</b><span>バンド活動を中心に、演奏やライブに向けて練習する。</span></div></div>
+<div class="item"><div class="icon">🎺</div><div><b>吹奏楽部</b><span>合奏を重ね、学園行事や演奏会で音楽を届ける。</span></div></div>
+<div class="item"><div class="icon">🎭</div><div><b>演劇部</b><span>演技や舞台制作に取り組み、一つの物語を作り上げる。</span></div></div>
+<div class="item"><div class="icon">👻</div><div><b>オカルト研究部</b><span>旧校舎を部室として学園の不思議を探求する。</span></div></div>
+</div></section>
+
+<section id="committees" class="section"><h2 class="section-title">委員会</h2><div class="list">
+<div class="item"><div class="icon">🏫</div><div><b>生徒会</b><span>生徒代表として学園を管理する。</span></div></div>
+<div class="item"><div class="icon">📋</div><div><b>風紀委員会</b><span>学園の秩序を守り、より良い学園生活を支える。</span></div></div>
+<div class="item"><div class="icon">📚</div><div><b>図書委員会</b><span>図書館の管理や貸出業務を行い、読書活動を支える。</span></div></div>
+<div class="item"><div class="icon">🩹</div><div><b>保健委員会</b><span>生徒の健康管理や、保健に関する活動を行う。</span></div></div>
+<div class="item"><div class="icon">🎙️</div><div><b>放送委員会</b><span>校内放送や学園行事でのアナウンスを担当する。</span></div></div>
+<div class="item"><div class="icon">🎪</div><div><b>文化祭実行委員会</b><span>さまざまな行事を考案，運営する。</span></div></div>
+</div></section>
+
+<section id="news" class="section"><h2 class="section-title">注目情報</h2><article class="card news"><div class="news-visual"></div><div class="news-body"><span class="label">イベント</span><h3>天の川に願いを─。</h3><p>年に一度、織姫と彦星が天の川を越えて出会う日。<br>そして、短冊に願いを綴る日でもあります。<br>そこで今年は七夕イベントを開催いたしました。</p><a class="news-link" href="https://nijigaku-tanabata.s-h-k-p-h-990.workers.dev/" target="_blank" rel="noopener noreferrer">短冊はこちらから</a></div></article></section>
 
 <section id="letters" class="section">
-
-<h2 class="section-title">
-学園だより
-</h2>
-
-<div
-id="letterList"
-class="letter-list"
->
-
-<div class="letter-card">
-
-<p>
-学園だよりを読み込んでいます。
-</p>
-
+<h2 class="section-title">学園だより</h2>
+<div id="letterList" class="letter-list">
+<div class="letter-card"><p>学園だよりを読み込んでいます。</p></div>
 </div>
-
-</div>
-
 </section>
 
-
 </main>
-
-
-<footer>
-
-<b>
-虹ケ丘学園
-</b>
-
-<small>
-NIJIGAOKA ACADEMY
-</small>
-
-</footer>
-
+<footer><b>虹ケ丘学園</b><small>NIJIGAOKA ACADEMY</small></footer>
 
 <script>
-
 function esc(value){
-
   return String(value ?? '')
-
-  .replaceAll('&','&amp;')
-  .replaceAll('<','&lt;')
-  .replaceAll('>','&gt;')
-  .replaceAll('"','&quot;')
-  .replaceAll("'",'&#039;');
-
+    .replaceAll('&','&amp;')
+    .replaceAll('<','&lt;')
+    .replaceAll('>','&gt;')
+    .replaceAll('"','&quot;')
+    .replaceAll("'",'&#039;');
 }
-
 
 async function loadLetters(){
-
-  const list=
-  document.getElementById(
-    'letterList'
-  );
+  const list=document.getElementById('letterList');
 
   try{
+    const response=await fetch('news.json',{cache:'no-store'});
+    if(!response.ok) throw new Error('news.jsonの読み込みに失敗しました');
 
-    const response=
-    await fetch(
-      'news.json',
-      {
-        cache:'no-store'
-      }
-    );
+    const news=await response.json();
 
-    if(!response.ok){
+    news.sort((a,b)=>String(b.date).localeCompare(String(a.date)));
 
-      throw new Error(
-        'news.jsonの読み込みに失敗しました'
-      );
-
-    }
-
-    const news=
-    await response.json();
-
-    news.sort(
-      (a,b)=>
-      String(b.date)
-      .localeCompare(
-        String(a.date)
-      )
-    );
-
-    list.innerHTML=
-    news.map(
-      item=>
-      `
+    list.innerHTML=news.map(item=>`
       <article class="letter-card">
-
         <div class="letter-meta">
-
-          <span>
-          ${esc(item.category)}
-          </span>
-
-          <time>
-          ${esc(item.date)}
-          </time>
-
+          <span>${esc(item.category)}</span>
+          <time>${esc(item.date)}</time>
         </div>
-
-        <h3>
-        ${esc(item.title)}
-        </h3>
-
-        <p>
-        ${esc(item.text).replaceAll(
-          '\\n',
-          '<br>'
-        )}
-        </p>
-
+        <h3>${esc(item.title)}</h3>
+        <p>${esc(item.text).replaceAll('\\n','<br>')}</p>
       </article>
-      `
-    ).join('');
+    `).join('');
 
     if(!news.length){
-
-      list.innerHTML=
-      '<div class="letter-card"><p>現在、学園だよりはありません。</p></div>';
-
+      list.innerHTML='<div class="letter-card"><p>現在、学園だよりはありません。</p></div>';
     }
-
   }catch(error){
-
     console.error(error);
-
-    list.innerHTML=
-    '<div class="letter-card"><p>学園だよりを読み込めませんでした。</p></div>';
-
+    list.innerHTML='<div class="letter-card"><p>学園だよりを読み込めませんでした。</p></div>';
   }
-
 }
 
-
 loadLetters();
-
 </script>
-
 
 </body>
 </html>
